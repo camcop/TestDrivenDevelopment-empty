@@ -52,9 +52,7 @@ public class Questions {
 		String output = "";
 		String sandwichLower = sandwich.toLowerCase();
 		String sandwichNoBread = sandwichLower.replace("bread", "");
-		if (sandwichNoBread.length() != sandwichLower.length() - 10) {
-			return "";
-		} else {
+		if (sandwichNoBread.length() == sandwichLower.length() - 10) {
 			String fillingRight = sandwichLower.substring(sandwichLower.indexOf("bread") + 5);
 			String filling = fillingRight.substring(0, fillingRight.indexOf("bread"));
 			for (int i = (filling.length() - 1); i >= 0; i--) {
